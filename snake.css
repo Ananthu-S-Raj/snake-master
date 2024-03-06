@@ -1,0 +1,129 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+  h1,
+h2,
+.controls {
+  text-align: center;
+}
+.snake-field {
+    width: 40%;
+    right: 0;
+  text-align: center;
+  position: relative;
+  margin: 0 auto; /* Center the canvas horizontally */
+}
+#score {
+  color: red;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(media/background_image.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.control-buttons{
+    width: 20%;
+position: fixed;
+top: 23%;
+display: flex;
+  flex-direction: column;
+  left: 8%;
+}
+.control-buttons button {
+    margin-bottom: 10px; /* Add some space between buttons */
+    cursor: pointer;
+}
+.level-btn{
+  color: black;
+  background-image: linear-gradient(to top right,#5FBDFF,#b8eef8);
+  width: 80px;
+  border: 1px solid white;
+  border-radius: 4px;
+  height: 25px;
+  margin-left: 2px;
+  font-family: 'Open Sans', sans-serif;
+}
+.level-btn:hover , .music-btn:hover,.new-game-btn:hover{
+  transform: scale(1.04);
+  transition: .2s ease-in;
+  background-image: linear-gradient(to top right,#b8eef8,#5FBDFF);
+
+}
+.music-btn{
+  margin-bottom: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(to top right,#5FBDFF,#b8eef8);
+  border: 1px solid white;
+  border-radius: 4px;
+  height: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+.new-game-btn{
+  background-image: linear-gradient(to top right,#5FBDFF,#b8eef8);
+  border: 1px solid white;
+  border-radius: 4px;
+  height: 25px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+#canvas {
+  /* border: 2px solid rgb(54, 221, 62); */
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  cursor: none;
+}
+.levels{
+  text-align: center;
+}
+.heading{
+color: #E3651D;
+font-family: Black Ops One;
+text-shadow: 2px 2px rgb(241, 214, 165);
+}
+#gameStatus{
+  color: #C7004C;
+  /* color: #1f8f82; */
+  font-family: Black Ops One;
+  text-shadow: 2px 2px white;
+}
+.score{
+  color: #7900FF;
+  font-family:jost;
+}
+#score{
+  color: #E11D74;
+}
+.currentLevel{
+  color: #7E30E1;
+  font-family:Archivo Black;
+  font-weight: 900;
+}
+#instruction-icons{
+  font-size: medium;
+  font-weight: bold;
+  color: #FCE22A;
+}
+.spacebar{
+  width: 70px;
+  background-color:#FBCB0A;
+  border-radius: 5px;
+  color: #607274;
+  padding: 2px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.instruction{
+  bottom: 0;
+  margin-left: 10px;
+}
+.instruction-note{
+  color: white;
+}

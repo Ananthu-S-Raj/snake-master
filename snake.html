@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Master</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon.png">
+    <link rel="stylesheet" href="snake.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /></head>
+
+<body>
+
+    <h1 class="heading">Snake Master</h1>
+    <!-- <h2>Score:<span id="score"></span></h2> -->
+    <div class="control-buttons">
+        <div class="levels">
+            <h4 class="currentLevel" >Current level: <span id="currentLevel"></span></h4>
+            <!-- <h4>You can change the level here.</h4> -->
+            <button class="level-btn" onclick="normal()"> Normal</button>
+            <button class="level-btn" onclick="hard()"> Hard </button>
+            <button class="level-btn" onclick="slow()"> Easy </button>
+        </div>
+        <button class="music-btn" onclick="toogleMusic()"> Mute /Unmute game music</button>
+        <button class="new-game-btn" onclick="replay()">New Game</button>
+        <h2 class="score" >Score: <span id="score"></span></h2>
+
+    </div>
+
+    <div class="snake-field">
+        <canvas id="canvas" width="400px" height="400px"></canvas>
+    
+    <h2><span id="gameStatus"></span></h2>
+</div>
+<div class="instruction">
+    <h4 class="instruction-note">Use
+        <span id="instruction-icons" class="material-symbols-outlined">
+            arrow_back east northsouth 
+            </span>to move &
+                <span class="spacebar">  Spacebar  </span>to play and pause. 
+    </h4>
+</div>
+
+
+    <script src="snake.js"></script>
+</body>
+
+</html>
